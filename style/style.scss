@@ -1,0 +1,427 @@
+html,
+body,
+ul,
+ol,
+a {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  max-width: 1400px;
+  margin: 0 auto;
+  //border: 1px solid black;
+
+}
+
+// colors:
+$buttonsColor: #80B7B3;
+$buttonsTextColor: #E8F0EF;
+$textColor: #687378;
+$formColor: #374C51;
+
+// stylizing header :
+header {
+  width: 100%;
+  overflow: hidden;
+
+
+  .header__content {
+    width: 741px;
+    height: 240px;
+    position: relative;
+    margin: 0 auto;
+
+    .header-logo {
+      width: 299px;
+      height: 131px;
+      background-color: $buttonsColor;
+      color: $buttonsTextColor;
+      opacity: 1.0;
+      text-align: center;
+      position: absolute;
+      left: 221px;
+      z-index: 100;
+
+      span {
+        width: 215px;
+        font-size: 60px;
+        position: relative;
+        top: 30px;
+      }
+    }
+
+    .header-sub-logo {
+      width: 100%;
+      height: 170px;
+      position: absolute;
+      z-index: 1;
+      left: 0;
+      bottom: 0;
+
+      span {
+        opacity: 0.1;
+        font-size: 189px;
+        line-height: 189px;
+        text-align: center;
+        font-family: 'Manrope', sans-serif;
+        letter-spacing: 25px;
+      }
+    }
+  }
+}
+
+// stylizing section-first :
+
+.section-first {
+  width: 100%;
+  height: 700px;
+  position: relative;
+  top: 30px;
+  overflow: hidden;
+
+
+  .section-first__name {
+    display: inline;
+    position: relative;
+    left: 150px;
+    width: 65px;
+    color: $textColor;
+    font-size: 10px;
+  }
+
+  .section-first__tittle {
+    width: 424px;
+    height: 80px;
+    position: absolute;
+    top: 40px;
+    left: 150px;
+    font-family: 'Manrope', sans-serif;
+    letter-spacing: 1px;
+    font-size: 30px;
+    color: black;
+  }
+
+  .section-first__text {
+    width: 408px;
+    height: 340px;
+    position: absolute;
+    top: 180px;
+    left: 150px;
+    font-size: 24px;
+    color: $textColor;
+    opacity: 0.7;
+    font-family: 'Manrope', sans-serif;
+  }
+
+  .section-first__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 45px;
+    border-radius: 35px;
+    font-size: 14px;
+    background-color: $buttonsColor;
+    color: $buttonsTextColor;
+    position: absolute;
+    left: 141px;
+    top: 550px;
+  }
+
+  .section-first__button:hover {
+    background-color: orange;
+  }
+
+  .section-first__images {
+    //width: 860px;
+    //height: 573px;
+    position: relative;
+    left: 640px;
+    right: 100px;
+
+    .section-first__first-image {
+      width: 760px;
+      height: 570px;
+      position: absolute;
+    }
+
+    .section-first__second-image {
+      width: 373px;
+      height: 248px;
+      position: absolute;
+      top: 58px;
+      left: -70px;
+    }
+  }
+}
+
+// stylizing section-second :
+
+.section-second {
+  width: 100%;
+  height: 1110px;
+
+  position: relative;
+  left: 100px;
+  overflow: hidden;
+
+
+  .section-second__name {
+    width: 65px;
+    position: absolute;
+    left: 530px;
+    color: $textColor;
+    //display: inline;
+    font-size: 10px;
+  }
+
+
+  .section-second__tittle {
+    width: 710px;
+    height: 86px;
+    position: relative;
+    left: 215px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    font-size: 30px;
+    top: 30px;
+    letter-spacing: 1px;
+    font-family: 'Manrope', sans-serif;
+
+  }
+
+  .section-second__image {
+    position: relative;
+    top: 20px;
+    left: 200px;
+
+    img {
+      width: 741px;
+      height: 561px;
+
+    }
+  }
+
+  .section-second__text {
+    width: 600px;
+    height: 300px;
+    font-size: 24px;
+    position: relative;
+    left: 250px;
+    color: $textColor;
+    opacity: 0.7;
+    font-family: 'Manrope', sans-serif;
+  }
+
+  .section-second__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 45px;
+    border-radius: 35px;
+    background-color: $buttonsColor;
+    color: $buttonsTextColor;
+    position: relative;
+    left: 250px;
+    top: 20px;
+    font-size: 14px;
+    opacity: 1.0;
+
+  }
+
+  .section-second__button:hover {
+    background-color: orange;
+  }
+
+}
+
+// stylizing section video
+.section-video {
+  width: 100%;
+  height: 400px;
+  background-image: url(../img/mountain.png);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .section-video__icon a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+  }
+
+  .section-video__icon span {
+    position: relative;
+    left: -55px;
+    font-size: 20px;
+    color: $buttonsTextColor;
+  }
+}
+
+// stylizing section quote
+
+.quote {
+  width: 100%;
+  height: 800px;
+  position: relative;
+
+  .quote-header {
+    width: 100%;
+    height: 400px;
+    position: relative;
+    top: 60px;
+
+    .quote-header__image {
+      position: relative;
+      width: 429px;
+      height: 286px;
+      left: 186px;
+    }
+
+    .quote__text {
+      position: absolute;
+      left: 729px;
+      top: 100px;
+
+      .quote-header__name {
+        width: 65px;
+        color: $textColor;
+        font-size: 10px;
+        margin-bottom: 20px;
+      }
+
+      .quote-header__tittle {
+        width: 373px;
+        height: 80px;
+        font-family: 'Manrope', sans-serif;
+        letter-spacing: 1px;
+        font-size: 30px;
+        color: black;
+      }
+    }
+  }
+
+  .footer__card {
+    width: 752px;
+    height: 314px;
+    border: 1px solid black;
+    //box-shadow: 15px 3px 2px white;
+    position: relative;
+    background: white;
+    display: flex;
+    justify-content: center;
+    //align-items: center;
+    flex-direction: column;
+    left: 441px;
+    top: -70px;
+
+    .footer__card-text {
+      width: 551px;
+      height: 124px;
+      font-size: 24px;
+      margin: 0 auto;
+      text-align: justify;
+      //color: #273D46;
+      color: $textColor;
+      font-family: 'Manrope', sans-serif;
+
+    }
+
+
+    .footer__card-author {
+      color: $textColor;
+      font-size: 14px;
+      position: relative;
+      left: 100px;
+    }
+
+  }
+
+  .footer__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 45px;
+    border-radius: 35px;
+    position: relative;
+    top: -87px;
+    left: 700px;
+    font-size: 14px;
+    background-color: $buttonsColor;
+    color: $buttonsTextColor;
+  }
+}
+
+// stylizing footer
+
+.footer {
+  width: 100%;
+  height: 500px;
+  background: url(../img/footer-img.png) no-repeat;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .footer__form {
+    width: 671px;
+    height: 328px;
+    background: $formColor;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: .8;
+
+    .footer__form-text {
+      width: 400px;
+      height: 47px;
+      position: relative;
+      font-size: 20px;
+      text-align: justify;
+      top: -40px;
+      color: $buttonsTextColor;
+      opacity: .8;
+    }
+
+    .footer__input-item {
+      width: 228px;
+      height: 46px;
+      border-radius: 35px;
+      background: $formColor;
+      opacity: .8;
+      outline: none;
+      color: $buttonsTextColor;
+      padding-left: 20px;
+    }
+
+    .footer__input-item:first-child {
+      margin-right: 25px;
+    }
+
+    .footer__button {
+      width: 233px;
+      height: 45px;
+      border-radius: 35px;
+      background: $buttonsColor;
+      color: $buttonsTextColor;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px;
+
+
+    }
+  }
+
+
+}
